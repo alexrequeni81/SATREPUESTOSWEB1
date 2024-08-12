@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATREPUESTOSWEB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SATREPUESTOSWEB</h1>
+        <input type="text" id="search" placeholder="Buscar...">
+        <button onclick="search()">Buscar</button>
+        <table id="repuestos-table">
+            <thead>
+                <tr>
+                    <th>REFERENCIA</th>
+                    <th>DESCRIPCIÓN</th>
+                    <th>MÁQUINA</th>
+                    <th>GRUPO</th>
+                    <th>COMENTARIO</th>
+                    <th>CANT</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <h2>Añadir/Editar Repuesto</h2>
+        <form id="repuestos-form">
+            <input type="hidden" id="id">
+            <input type="text" id="referencia" placeholder="REFERENCIA">
+            <input type="text" id="descripcion" placeholder="DESCRIPCIÓN">
+            <input type="text" id="maquina" placeholder="MÁQUINA">
+            <input type="text" id="grupo" placeholder="GRUPO">
+            <input type="text" id="comentario" placeholder="COMENTARIO">
+            <input type="number" id="cant" placeholder="CANT">
+            <button type="submit">Guardar</button>
+            <button type="button" onclick="clearForm()">Cancelar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
